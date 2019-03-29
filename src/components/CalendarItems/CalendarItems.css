@@ -1,0 +1,13 @@
+.calendarItems {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px){
+    .calendarItems {
+        flex-direction: column;
+    }
+}

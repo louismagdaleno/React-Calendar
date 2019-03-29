@@ -1,0 +1,73 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.calendar {
+    width: 100%;
+    max-width: 1080px;
+    height: 300px;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro',Helvetica,Arial,Lucida,sans-serif;
+    background-image: url(http://www.dusd.net/permits/files/2019/03/dusd_kids_blue.jpg) ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 16px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+.calendar>header>h2 {
+    font-size: 2.6rem;
+}
+a > h3 {
+    font-size: 1.4rem;
+    color: white;
+}
+
+ .left-button,
+ .right-button {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  color: #fff;
+  background-color: #333;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+ .left-button:hover,
+ .right-button:hover {
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #333;
+}
+.left-button {
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+ .right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+}
